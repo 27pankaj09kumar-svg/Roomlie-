@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HostelEase - Common Room Booking</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        <div class="logo-icon">
+            <i class="fa-solid fa-building"></i>
+        </div>
+
+        <div>
+            <h2>Hostel<span>Ease</span></h2>
+            <small>Common Room Booking</small>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#booking">Book Now</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <a href="#booking" class="nav-button">
+        Book a Room
+    </a>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            <i class="fa-solid fa-circle-check"></i>
+            Easy & Fast Hostel Booking
+        </div>
+
+        <h1>
+            Your Space.
+            <span>Your Time.</span>
+            Your Choice.
+        </h1>
+
+        <p>
+            Book your hostel common room easily for studying,
+            meetings, gaming, movie nights and group activities.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#rooms" class="primary-button">
+                Explore Rooms
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#booking" class="secondary-button">
+                <i class="fa-regular fa-calendar"></i>
+                Book Now
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>3+</strong>
+                <span>Common Rooms</span>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>Booking Access</span>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <span>Easy Booking</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <div class="hero-image-card">
+
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1000&q=85"
+                 alt="Modern common room">
+
+            <div class="image-overlay">
+
+                <div>
+                    <i class="fa-solid fa-circle"></i>
+                    Available Now
+                </div>
+
+                <strong>Modern Study & Common Space</strong>
+
+            </div>
+
+        </div>
+
+        <div class="floating-card">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            <div>
+                <strong>Quick Booking</strong>
+                <small>Reserve your space in seconds</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ROOMS ================= -->
+
+<section class="rooms-section" id="rooms">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label">OUR SPACES</span>
+
+            <h2>Choose Your Perfect Room</h2>
+        </div>
+
+        <p>
+            Comfortable and well-equipped spaces designed
+            for hostel students.
+        </p>
+
+    </div>
+
+
+    <div class="room-grid">
+
+
+        <!-- ROOM 1 -->
+
+        <div class="room-card">
+
+            <div class="room-image">
+
+                <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=900&q=85"
+                     alt="Study room">
+
+                <span class="available">
+                    <i class="fa-solid fa-circle"></i>
+                    Available
+                </span>
+
+            </div>
+
+            <div class="room-content">
+
+                <div class="room-title">
+
+                    <h3>Study Room</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.9
+                    </div>
+
+                </div>
+
+                <p>
+                    A peaceful and comfortable environment
+                    for studying and group projects.
+                </p>
+
+                <div class="room-features">
+
+                    <span>
+                        <i class="fa-solid fa-users"></i>
+                        10 Students
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-wifi"></i>
+                        Wi-Fi
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-plug"></i>
+                        Charging
+                    </span>
+
+                </div>
+
+                <button class="room-button"
+                        onclick="selectRoom('Study Room')">
+
+                    Book Study Room
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROOM 2 -->
+
+        <div class="room-card">
+
+            <div class="room-image">
+
+                <img src="https://images.unsplash.com/photo-1603190287605-e6ade32fa852?auto=format&fit=crop&w=900&q=85"
+                     alt="Entertainment room">
+
+                <span class="available">
+                    <i class="fa-solid fa-circle"></i>
+                    Available
+                </span>
+
+            </div>
+
+            <div class="room-content">
+
+                <div class="room-title">
+
+                    <h3>Entertainment Room</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.8
+                    </div>
+
+                </div>
+
+                <p>
+                    Enjoy movies, games and quality time
+                    with your hostel friends.
+                </p>
+
+                <div class="room-features">
+
+                    <span>
+                        <i class="fa-solid fa-users"></i>
+                        20 Students
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-tv"></i>
+                        Smart TV
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-gamepad"></i>
+                        Games
+                    </span>
+
+                </div>
+
+                <button class="room-button"
+                        onclick="selectRoom('Entertainment Room')">
+
+                    Book Entertainment
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROOM 3 -->
+
+        <div class="room-card">
+
+            <div class="room-image">
+
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
+                     alt="Meeting room">
+
+                <span class="available">
+                    <i class="fa-solid fa-circle"></i>
+                    Available
+                </span>
+
+            </div>
+
+            <div class="room-content">
+
+                <div class="room-title">
+
+                    <h3>Meeting Room</h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        4.7
+                    </div>
+
+                </div>
+
+                <p>
+                    Perfect for meetings, presentations,
+                    discussions and group activities.
+                </p>
+
+                <div class="room-features">
+
+                    <span>
+                        <i class="fa-solid fa-users"></i>
+                        15 Students
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-display"></i>
+                        Projector
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-wifi"></i>
+                        Wi-Fi
+                    </span>
+
+                </div>
+
+                <button class="room-button"
+                        onclick="selectRoom('Meeting Room')">
+
+                    Book Meeting Room
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING ================= -->
+
+<section class="booking-section" id="booking">
+
+    <div class="booking-container">
+
+        <div class="booking-info">
+
+            <span class="section-label">RESERVE YOUR SPACE</span>
+
+            <h2>
+                Book Your Common Room
+            </h2>
+
+            <p>
+                Fill in your details and reserve a room
+                for your preferred date and time.
+            </p>
+
+            <div class="booking-benefits">
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+
+                    <div>
+                        <strong>Instant Confirmation</strong>
+                        <span>Get confirmation immediately.</span>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+
+                    <div>
+                        <strong>Easy Cancellation</strong>
+                        <span>Cancel your booking whenever needed.</span>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-check"></i>
+
+                    <div>
+                        <strong>Conflict Protection</strong>
+                        <span>No overlapping room bookings.</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="booking-form-card">
+
+            <form id="bookingForm">
+
+                <div class="form-row">
+
+                    <div class="input-group">
+
+                        <label>
+                            Student Name
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <input type="text"
+                                   id="studentName"
+                                   placeholder="Enter your name"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>
+                            Student ID
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-id-card"></i>
+
+                            <input type="text"
+                                   id="studentId"
+                                   placeholder="Enter student ID"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        Select Room
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-door-open"></i>
+
+                        <select id="room" required>
+
+                            <option value="">
+                                Choose a room
+                            </option>
+
+                            <option value="Study Room">
+                                Study Room
+                            </option>
+
+                            <option value="Entertainment Room">
+                                Entertainment Room
+                            </option>
+
+                            <option value="Meeting Room">
+                                Meeting Room
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="input-group">
+
+                        <label>Date</label>
+
+                        <div class="input-box">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <input type="date"
+                                   id="date"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Start Time</label>
+
+                        <div class="input-box">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                            <input type="time"
+                                   id="startTime"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>End Time</label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <input type="time"
+                               id="endTime"
+                               required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Purpose of Booking</label>
+
+                    <textarea id="purpose"
+                              placeholder="Example: Group study, meeting, movie night..."
+                              required></textarea>
+
+                </div>
+
+
+                <button type="submit"
+                        class="confirm-button">
+
+                    Confirm Booking
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+                <div id="message"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKINGS ================= -->
+
+<section class="my-bookings" id="myBookings">
+
+    <div class="section-heading center">
+
+        <div>
+
+            <span class="section-label">
+                BOOKING HISTORY
+            </span>
+
+            <h2>My Reservations</h2>
+
+        </div>
+
+    </div>
+
+    <div id="bookingList">
+
+        <div class="empty-bookings">
+
+            <i class="fa-regular fa-calendar-xmark"></i>
+
+            <h3>No bookings yet</h3>
+
+            <p>
+                Your confirmed room bookings will appear here.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-content">
+
+        <span class="section-label">ABOUT HOSTELEase</span>
+
+        <h2>
+            Making Hostel Life
+            <span>More Convenient</span>
+        </h2>
+
+        <p>
+            HostelEase makes it simple for students to find
+            and reserve common rooms without waiting or
+            manually checking availability.
+        </p>
+
+        <div class="about-stats">
+
+            <div>
+                <strong>3+</strong>
+                <span>Rooms</span>
+            </div>
+
+            <div>
+                <strong>50+</strong>
+                <span>Daily Slots</span>
+            </div>
+
+            <div>
+                <strong>24/7</strong>
+                <span>Access</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+            <div>
+                <h2>Hostel<span>Ease</span></h2>
+                <p>Smart Hostel Common Room Booking</p>
+            </div>
+
+        </div>
+
+        <p>
+            © 2026 HostelEase. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
